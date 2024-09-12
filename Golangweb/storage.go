@@ -29,7 +29,7 @@ type PostgresStore struct{
 }
  func NewPostgresStore ()(*PostgresStore,error){
 	//connect to database
-	connstr:="postgres://postgres:9910994194lokesh@localhost:5432/postgres?sslmode=disable"
+	connstr:=""
     db,err:=sql.Open("postgres",connstr)
 	if err!=nil{
 		return nil,err
